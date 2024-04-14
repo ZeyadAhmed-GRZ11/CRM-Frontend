@@ -30,7 +30,6 @@ export const AddTicket= () => {
     });
       console.log(name, value);
    };
-
   
    function shortText(str) {
       return str.length >= 3 && str.length <= 100;

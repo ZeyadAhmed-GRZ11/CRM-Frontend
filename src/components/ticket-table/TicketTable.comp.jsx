@@ -1,10 +1,14 @@
 import React from 'react'
 import {Table} from "react-bootstrap";
+import PropTypes from "prop-types";
 
-export const TicketTable = ({tickets}) => {
+
+export const TicketTable = ({ tickets }) => {
+
+   if(!tickets.length)
+
   return (
-    <div>
-     <Table striped borderd hover>
+     <Table striped  hover>
 
       <thead>
         <tr>
@@ -16,36 +20,30 @@ export const TicketTable = ({tickets}) => {
       </thead>
       
       <tbody>
-         {tickets.length && 
-            tickets.map((row,i) => (
-        <tr>
-          <td>{row.id}</td>
-          <td>{row.subject}</td>
-          <td>{row.status}</td>
-          <td>{row.addedAt}</td>
-        </tr>
-        ))}
-        <tr>
-          <td>2</td>
-          <td>cpu issue</td>
-          <td>client response pending</td>
-          <td>2020-11-13</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Ram issue</td>
-          <td>client response pending</td>
-          <td>2020-11-14</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Processor issue</td>
-          <td>client response pending</td>
-          <td>2020-11-15</td>
-        </tr>
-      </tbody>
 
+         {tickets.length ? (
+            tickets.map((row) => (
+        <tr key = {row.id}>
+            <td>{row.id}</td>
+             <td>{row.subject}</td>
+              <td>{row.status}</td>
+               <td>{row.addedAt}</td>
+        </tr>
+        ))
+
+      ) : (
+
+         <tr>
+           <td>No Ticket To Show</td>
+         </tr>    
+
+      )}
+        
+      </tbody>
      </Table>
-    </div>
-  )
-}
+  );
+};
+
+TicketTable.prototype = {
+    tickets: PropTypes.array.isRequired,
+};
