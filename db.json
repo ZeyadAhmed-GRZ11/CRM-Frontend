@@ -1,28 +1,29 @@
-[
-    {
-        "id":2,
-        "subject":"Email certificate expired",
-        "status":"client response pending",
-        "addedAt":"2020-2-12",
-        "history": [
-            {
-            "date":"20-10-10",
-            "message":"done",
-             "sender":"client"
+{
+    "data": [
+        {
+            "id": 2,
+            "subject":"Email certificate expired",
+            "status":"client response pending",
+            "addedAt":"2020-2-12",
+            "history": [
+                {
+                "date":"20-10-10",
+                "message":"done",
+                 "sender":"client"
+            },
+                {
+                "date":"20-10-10",
+                "message":"Good",
+                 "sender":"client"
+            },
+                {
+                "date":"20-10-10",
+                "message":"Worse",
+                 "sender":"client"
+            }
+              ]
         },
-            {
-            "date":"20-10-10",
-            "message":"Good",
-             "sender":"client"
-        },
-            {
-            "date":"20-10-10",
-            "message":"Worse",
-             "sender":"client"
-        }
             
-    ]
-    },
     {
         "id":1,
         "subject":"email is done",
@@ -125,5 +126,6 @@
         "status":"client response pending",
         "addedAt":"2020-2-12"
     }
-   
-]
+    
+    ]
+}

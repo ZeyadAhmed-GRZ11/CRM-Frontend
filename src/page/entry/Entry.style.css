@@ -1,8 +1,11 @@
 .entry-page {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-image: url('ha.jpg') */
+    background-color: brown;
 }
 .form-box{
     box-shadow:0px 0px 15px -5px black ;

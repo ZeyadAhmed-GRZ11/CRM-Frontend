@@ -53,7 +53,22 @@ const formSwitcher = frmType =>{
 }
 
   return (
-    <div className="entry-page bg-info">
+
+    <div className="entry-page" >
+     
+     <Card style={{'padding': '10px 10px', 'margin':'40px 40px 40px 40px'}}>
+      <Card.Title>What is Dern-Support?</Card.Title>
+        <Card.Body>
+          Dern-Support is a company specialized in hardware
+           maintenance and providing technical support services
+            for individuals and businesses. The company offers a
+             wide range of services including repair and
+              maintenance of computers, laptops, smartphones,
+               tablets, and network devices.
+        </Card.Body>
+       </Card>
+
+      <hr />
         
      <Card className='form-box'>
       {frmload === 'login' &&(

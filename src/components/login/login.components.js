@@ -1,16 +1,19 @@
 import React from 'react'
 import './login.style.css'
 import propTypes from 'prop-types';
-import {Container, Row, Col, Form, Button} from "react-bootstrap";
+import {Container, Row, Col, Form, Button, Card} from "react-bootstrap";
 
 
 export const LoginForm = ({handleOnchange, handleOnSubmit, formSwitcher, email, password}) => {
   return (
+    
+  <div>
+
     <Container>
       <Row>
         <Col>
 
-           <h1 className='text-info text-center'>Client Login</h1>
+           <h1 className='text-danger text-center'>Client Login</h1>
            <hr />
 
         <Form autoComplete='off' onSubmit={handleOnSubmit}>
@@ -54,6 +57,7 @@ export const LoginForm = ({handleOnchange, handleOnSubmit, formSwitcher, email, 
       </Row>
 
     </Container>
+    </div>
   )
 }
 LoginForm.propTypes = {
