@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Routes, Link, Switch } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import { Entry } from './page/entry/Entry.page';
 import { DefaultLayout } from './layout/DefaultLayout';
@@ -13,6 +14,18 @@ import { QaHelp } from './page/QAhelp/QaHelp';
 // import { UpdateTicket } from './components/Update-Ticket/UpdateTicket.comp';
 
 function App() {
+  
+  // https://localhost:5000/users
+
+  // const [data, setData] = useState([])
+  // useEffect(() => {
+  //   fetch('https://localhost:5000/users')
+  //   .then(res => res.json())
+  //   .then(data> console.log(data))
+  //   .catch(err => console.log(err));
+  // },[])
+
+
   return (
     <div className="App">
      <Router>
