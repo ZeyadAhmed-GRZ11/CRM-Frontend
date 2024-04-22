@@ -5,19 +5,20 @@ import tickets from '../../assets/data/dummy-tickets.json';
 import { PageBreadcrumb } from '../../components/breadcrumb/Breadcrumb.comp';
 import { Link } from 'react-router-dom';
 import { url } from '../../utils/axios';
+// import './db.json'
 
 
 export const Dashboard = () => {
+  
   const [data , setData] = useState([])
+
   // useEffect(async () => {
   //   const data = await url('http://localhost:3000/14')
   //  setData(data)
   // })
 // 
-  useEffect(async () => {
-   const data = await url('http://localhost:3000/data')
-   setData(data)
-  } , [])
+  useEffect(async () => {setData(data)} , [])
+
   return (
     <div>
      <Container>

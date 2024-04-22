@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 export const TicketTable = ({ tickets }) => {
 
   if(tickets.length > 0) {
+    
     return (
       <Table striped  hover>
  
@@ -36,6 +37,7 @@ export const TicketTable = ({ tickets }) => {
        </tbody>
       </Table>
    );
+
   } else {
     return <div>No Ticket to show</div>
   }

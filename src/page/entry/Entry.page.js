@@ -66,7 +66,10 @@ const formSwitcher = frmType =>{
               maintenance of computers, laptops, smartphones,
                tablets, and network devices.
         </Card.Body>
+          <a href="./defaultLayout">Know More</a>
        </Card>
+
+       
 
       <hr />
         
